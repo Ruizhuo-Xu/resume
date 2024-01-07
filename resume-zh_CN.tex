@@ -9,55 +9,44 @@
 % \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
+\usepackage{color}
+\definecolor{lightgray}{gray}{0.9}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{徐睿卓}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{ruizhuoxu@163.com} \textperiodcentered\ 
+  \phone{(+86) 13250921863} \textperiodcentered\ 
+  \faBirthdayCake{}{2000.08.24} \textperiodcentered\
+  \faHome{}{浙江湖州}
+  }
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{北京邮电大学}, 人工智能学院，模式识别实验室}{2022.09 -- 至今}
+\textit{在读硕士研究生}, \textit{2025.06毕业},\
+\textit{导师：邓伟洪教授\href{http://whdeng.cn/}{\faExternalLink{}}(引用量1.2万+)}
+
+\colorbox{lightgray}{\textit{一等学业奖学金}, \textit{院级优秀研究生},
+\textit{1篇SCI一区论文第一作者}}
+
+\datedsubsection{\textbf{浙江工业大学}, 信息工程学院，通信工程}{2018.09 -- 2022.06}
+\textit{学士}, \colorbox{lightgray}{\textit{绩点排名:1/115,
+获得研究生推免资格, 省级优秀毕业生}}
+
+\colorbox{lightgray}{\textit{省政府奖学金}, \textit{校级优秀学生}
+\textit{全国大学生智能汽车竞赛-双车接力组(全国一等奖)}}
 
 \section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
+\datedsubsection{\textbf{奇虎360\ -\ 北京\ -\ 深度学习应用部\ -\ 算法实习生}}{2021年12月 -- 2022年05月}
+研究方向:\ 基于对比学习的语音模态和文本模态对齐
 \begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
+  \item 提出了一个新颖的端到端模型，将语音模态和文本模态相结合用于口语语言理解(SLU)任务；
+  \item 
   \item xxx
 \end{itemize}
-
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
-\begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
-\end{itemize}
-\end{onehalfspacing}
-
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
 %An xxx optimized for xxx\cite{verma2015large}
