@@ -41,11 +41,15 @@
 
 \section{\faUsers\ 实习/项目经历}
 \datedsubsection{\textbf{奇虎360\ -\ 北京\ -\ 深度学习应用部\ -\ 算法实习生}}{2021年12月 -- 2022年05月}
-研究方向:\ 基于对比学习的语音模态和文本模态对齐
-\begin{itemize}
+\colorbox{lightgray}{研究方向:\ 基于对比学习的语音模态和文本模态对齐}
+\begin{itemize}[parsep=1.0ex]
   \item 提出了一个新颖的端到端模型，将语音模态和文本模态相结合用于口语语言理解(SLU)任务；
-  \item 
-  \item xxx
+  \item 利用CIF机制，实现了语音特征序列和文本特征序列长度的对齐；
+        利用InfoNCE损失，通过将语音特征序列和文本特征序列对应位置的token作为正样本对，
+        其它位置作为负样本对，进行对比学习，实现了两者特征空间的对齐，
+        在保留语音特有信息的同时充分发挥了语言模型的强大能力；
+  \item 相较于其他两阶段的方法或只使用语音模型的方法，本方法在口语语言理解数据集的
+        情感分析子集上取得了1.15\%的召回率和0.82\%的F1分数提升；
 \end{itemize}
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
