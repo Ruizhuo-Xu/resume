@@ -11,6 +11,7 @@
 \usepackage{cite}
 \usepackage{color}
 \definecolor{lightgray}{gray}{0.9}
+\definecolor{linkcolor}{RGB}{0, 100, 200} % 自定义链接颜色
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -27,21 +28,22 @@
 \section{\faGraduationCap\  教育背景}
 \datedsubsection{\textbf{北京邮电大学}, 人工智能学院，模式识别实验室}{2022.09 -- 至今}
 \textit{在读硕士研究生}, \textit{2025.06毕业},\
-\textit{导师：邓伟洪教授\href{http://whdeng.cn/}{\faExternalLink{}}(引用量1.2万+)}
+\textit{导师：邓伟洪教授\href{http://whdeng.cn/}{\textcolor{linkcolor}{\faExternalLink{}}}(引用量1.2万+)}
 
 \colorbox{lightgray}{\textit{一等学业奖学金}, \textit{院级优秀研究生},
 \textit{1篇SCI一区论文第一作者}}
 
 \datedsubsection{\textbf{浙江工业大学}, 信息工程学院，通信工程}{2018.09 -- 2022.06}
-\textit{学士}, \colorbox{lightgray}{\textit{绩点排名:1/115,
-获得研究生推免资格, 省级优秀毕业生}}
+\textit{学士}, \colorbox{lightgray}{\textit{绩点排名:1 / 115,
+获得推荐免试攻读研究生资格, 省级优秀毕业生}}
 
-\colorbox{lightgray}{\textit{省政府奖学金}, \textit{校级优秀学生}
+\colorbox{lightgray}{\textit{省政府奖学金}, \textit{校级优秀学生},
 \textit{全国大学生智能汽车竞赛-双车接力组(全国一等奖)}}
 
 \section{\faUsers\ 实习/项目经历}
 \datedsubsection{\textbf{奇虎360\ -\ 北京\ -\ 深度学习应用部\ -\ 算法实习生}}{2021年12月 -- 2022年05月}
 \colorbox{lightgray}{研究方向:\ 基于对比学习的语音模态和文本模态对齐}
+\href{https://arxiv.org/abs/2204.10461}{\textcolor{linkcolor}{\faExternalLink}}
 \begin{itemize}[parsep=1.0ex]
   \item 提出了一个新颖的端到端模型，将语音模态和文本模态相结合用于口语语言理解(SLU)任务；
   \item 利用CIF机制，实现了语音特征序列和文本特征序列长度的对齐；
@@ -51,32 +53,95 @@
   \item 相较于其他两阶段的方法或只使用语音模型的方法，本方法在口语语言理解数据集的
         情感分析子集上取得了1.15\%的召回率和0.82\%的F1分数提升；
 \end{itemize}
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
-
-\section{\faCogs\ IT 技能}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+\datedsubsection{\textbf{中国移动研究院\ -\ 北京\ -\ 合作项目}}{2022年09月 -- 2023年12月}
+\colorbox{lightgray}{研究方向:\ 基于深度相机的人脸和人体分析}
+\href{https://www.sciencedirect.com/science/article/pii/S0031320323006349}{\textcolor{linkcolor}{\faExternalLink{}}}
+\begin{itemize}[parsep=1.0ex]
+  \item 针对消费级深度相机采集得到的低质量人脸深度图像，实现了一个完整的数据预处理和数据增强
+        管道，有效地降低了数据噪声的干扰并扩增了训练数据量，改善了基于深度图像的人脸识别性能；
+  \item 利用隐式神经表示技术，提出了一个新颖的深度人脸图像去噪网络，
+        将空间坐标信息作为深度人脸去噪和细化的先验，有效地改善了深度人脸图像的质量
+        并提高了人脸识别准确率；
+  \item 提出了一个轻量级的分组卷积融合模块，实现了深度图模态和法线图模态在特征层面的有效融合，
+        有利于模型对人脸形状和姿态的感知，进一步提高了人脸识别准确率。
+  \item 相较于之前最先进的工作，本项目所提方法在深度人脸图像的去噪和细化指标PSNR、
+        SSIM以及RMSE上分别提升了0.56db，0.96和0.117，总体人脸识别率提升了4.27\%。
 \end{itemize}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
-
-\section{\faInfo\ 其他}
+\section{\faInfo\ 论文}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item \textbf{Depth Map Denoising Network and Lightweight Fusion Network for Enhanced 3D Face Recognition.}
+        \textcolor{magenta}{(Pattern Recognition 2024 - 第1作者 -> 模式识别顶级期刊)}
+        \href{https://www.sciencedirect.com/science/article/pii/S0031320323006349}{\textcolor{linkcolor}{\faExternalLink{}}}
+
+        \textit{\textbf{Ruizhuo Xu}, Ke Wang, Chao Deng, Mei Wang Junlan Feng, Weihong Deng et al.}
+
+        \colorbox{lightgray}{三维人脸识别、深度图去噪、隐式神经表示}
+
+        \begin{itemize}[parsep=0.5ex]
+          \item 首次将隐式神经表示技术引入深度人脸图像去噪领域，利用空间坐标信息指导深度人脸去噪；
+                引入位置编码，并提出了一个多尺度解码融合策略，有效地提升了深度人脸去噪的性能；
+          \item 提出了一个轻量级三维人脸识别网络，通过一个多分支卷积融合模块实现了深度图模态和法线图
+                模态的深度融合，在提高三维人脸表征质量的同时，平衡了计算开销；
+          \item 利用提出的深度人脸去噪网络和人脸识别网络，在多个三维人脸数据集上均取得了SOTA的去噪
+                和识别性能；
+        \end{itemize}
+        
+  \item \textbf{Skeleton2vec: A Self-supervised Learning Framework with Contextualized Target Representations for Skeleton Sequence}
+        \textcolor{magenta}{(CVPR 2024在投 - 第1作者)}
+        \href{https://arxiv.org/abs/2401.00921}{\textcolor{linkcolor}{\faExternalLink{}}}
+
+        \textit{\textbf{Ruizhuo Xu}, Linzhi Huang, Mei Wang, Jiani Hu, Weihong Deng}
+
+        \colorbox{lightgray}{自监督预训练、掩码预测、基于骨架的行为识别}
+
+        \begin{itemize}[parsep=0.5ex]
+          \item 之前基于掩码预测的骨架序列预训练工作往往采用局部的、低层次的预测目标(如：原始关节点)，这是次优的；
+                为此，我们提出了Skeleton2vec框架，利用EMA更新的教师编码器生成全局上下文化的高层次
+                特征表示作为预测目标，迫使编码器学习到的表征具有更强的时空联系。
+          \item 针对骨架序列具有较高时空关联性可能会产生的信息泄露问题，我们提出了基于运动感知的管道遮蔽策略
+                (Motion-aware Tube Masking)，迫使模型建模更好的长程时空联系，并持续关注运动语义丰富的区域；
+          \item 在三个大规模3D骨架行为识别数据集上的多个测试协议下，均取得了SOTA的性能；
+        \end{itemize}
+        
+  \item \textbf{WaBERT: A Low-resource End-to-end Model for Spoken Language Understanding and Speech-to-BERT Alignment}
+        \textcolor{magenta}{(共同一作)}
+        \href{https://arxiv.org/abs/2204.10461}{\textcolor{linkcolor}{\faExternalLink{}}}
+
+        \textit{Lin Yao, Jianfei Song, \textbf{Ruizhuo Xu}, Yingfang Yang, Zijian Chen, Yafeng Deng}
+
+        \colorbox{lightgray}{模态对齐、对比学习、口语语言理解}
+
+        \begin{itemize}[parsep=0.5ex]
+          \item 口语语言理解任务主要有两种主流方法：(1) 两阶段法：首先将语音通过语音识别模型转成文本，作为语言模型的输入，
+                微调语言模型做下游任务；(2) 端到端法：直接微调预训练好的语音模型做下游任务；前者会丢失语音特有的信息
+                并易受语音识别错误的影响；后者缺乏语言模型强大的语言理解能力；为此，我们提出一个新的端到端方案，
+                结合语音模型和语言模型用于口语语言理解任务；在不丢失语音特有信息的同时，充分发挥语言模型的能力；
+          \item 利用CIF机制实现语音模态和文本模态特征序列长度的对齐，利用InfoNCE Loss对齐语音模态和文本模态的
+                特征空间; 推理时，语音输入经过语音编码器提取声学特征，提取得到的特征再作为语言编码器的输入，
+                输出下游任务的结果；
+        \end{itemize}
+        
 \end{itemize}
+
+\section{\faCogs\ 专业技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程能力: 了解Python、C/C++、Linux、Latex、Git、Vim;
+  \item 深度学习: 熟悉使用Pytorch开发深度学习模型，在算法改进和工程开发方面有相关实操经验;
+  \item 个人证书: 英语（CET-4、CET-6）;
+\end{itemize}
+
+\section{\faHeartO\ 主要荣誉}
+\begin{itemize}[parsep=0.5ex]
+  \item \datedline{第十六届全国大学生智能汽车竞赛，\textit{全国一等奖(4 / 225)}}{2021.08}
+  \item \datedline{第十五届全国大学生智能汽车竞赛，\textit{浙江省三等奖}}{2020.08}
+  \item \datedline{省级优秀毕业生}{2022.06}
+  \item \datedline{院级优秀研究生}{2023.09}
+  \item \datedline{省政府奖学金 \& 校级优秀学生}{2019.09 / 2020.09 / 2021.09}
+\end{itemize}
+
 
 %% Reference
 %\newpage
