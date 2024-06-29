@@ -41,6 +41,19 @@
 \textit{全国大学生智能汽车竞赛-双车接力组(全国一等奖)}}
 
 \section{\faUsers\ 实习/项目经历}
+\datedsubsection{\textbf{字节跳动\ -\ TikTok短视频\ -\ Data-Rec Core(基础推荐)\ -\ 算法实习生}}{2024年02月 -- 至今}
+\colorbox{lightgray}{业务方向:\ 基于多模态技术的TikTok短视频内容理解 (三层级多元化标签分类)}
+\begin{itemize}[parsep=1.0ex]
+  \item 利用多模态技术(Video Frames, ASR, OCR, Title et al.)为每日新投稿短视频打上多元化标签,
+  供下游业务调用(推荐、搜索 et al.),节省了大量标注人力;
+  \item 将多模态框架从CNN转移到Transformer,使用学习率逐层衰减稳定训练,实现了模态结构的统一,
+  便于后续模型扩展和数据扩增;
+  \item 针对噪声标签问题,利用教师模型的输出计算样本不确定性分数,对蒸馏损失进行加权,有效提升了模型平均召回率(AR65\%@P80->AR67\%@P80)
+  \item 利用训练好的基线模型根据阈值划分从无标签数据生产高质量伪标签,将训练数据量从5000万扩充至1亿2千万,
+  大大提高了基线指标(AR67\%@P80->AR70\%@P80);
+  \item 针对所使用的多模态分类模型结构,设计了一套多模态自监督预训练方法(MIM + MLM + CLIP Alignment)，
+  在大规模有标签数据量的场景下,进一步提高了模型指标(AR70\%P80->AR71\%@P80);
+\end{itemize}
 \datedsubsection{\textbf{奇虎360\ -\ 北京\ -\ 深度学习应用部\ -\ 算法实习生}}{2021年12月 -- 2022年05月}
 \colorbox{lightgray}{研究方向:\ 基于对比学习的语音模态和文本模态对齐}
 \href{https://arxiv.org/abs/2204.10461}{\textcolor{linkcolor}{\faExternalLink}}
@@ -89,7 +102,7 @@
         \end{itemize}
         
   \item \textbf{Skeleton2vec: A Self-supervised Learning Framework with Contextualized Target Representations for Skeleton Sequence}
-        \textcolor{magenta}{(CVPR 2024在投 - 第1作者)}
+        \textcolor{magenta}{(准备投稿 - 第1作者)}
         \href{https://arxiv.org/abs/2401.00921}{\textcolor{linkcolor}{\faExternalLink{}}}
 
         \textit{\textbf{Ruizhuo Xu}, Linzhi Huang, Mei Wang, Jiani Hu, Weihong Deng}
